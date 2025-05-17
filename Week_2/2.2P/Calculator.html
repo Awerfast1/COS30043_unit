@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styled Bootstrap Calculator</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .calculator {
+            width: 300px;
+            margin: 40px auto;
+            padding: 15px;
+            border: 2px solid #3333335c;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .calculator p {
+            text-align: center;
+            margin: 0;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+        }
+
+        .output {
+            height: 50px;
+            background-color: #fff;
+        }
+
+        
+
+        /* Ensure spacing between rows */
+        .row {
+            margin-bottom: 5px;
+            --bs-gutter-x: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="h3 text-center">Calculator</h3>
+    <div class="container bg-light calculator">
+
+        <div class="row">
+            <div class="col-sm-12"><p class="output"></p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p class="bg-secondary">mc</p></div>
+            <div class="col-sm-3"><p class="bg-secondary">m+</p></div>
+            <div class="col-sm-3"><p class="bg-secondary">m-</p></div>
+            <div class="col-sm-3"><p class="bg-secondary">mr</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p class="bg-secondary">AC</p></div>
+            <div class="col-sm-3"><p class="bg-secondary">√x</p></div>
+            <div class="col-sm-3"><p class="bg-secondary">%</p></div>
+            <div class="col-sm-3"><p class="bg-warning">+</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p>7</p></div>
+            <div class="col-sm-3"><p>8</p></div>
+            <div class="col-sm-3"><p>9</p></div>
+            <div class="col-sm-3"><p class="bg-warning">×</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p>4</p></div>
+            <div class="col-sm-3"><p>5</p></div>
+            <div class="col-sm-3"><p>6</p></div>
+            <div class="col-sm-3"><p class="bg-warning">−</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p>1</p></div>
+            <div class="col-sm-3"><p>2</p></div>
+            <div class="col-sm-3"><p>3</p></div>
+            <div class="col-sm-3"><p class="bg-warning">+</p></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><p>0</p></div>
+            <div class="col-sm-3"><p>.</p></div>
+            <div class="col-sm-3"><p>+/-</p></div>
+            <div class="col-sm-3"><p class="bg-warning">=</p></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="framework/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
