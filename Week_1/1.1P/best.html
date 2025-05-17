@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="best.css" rel="stylesheet">
+        <title>Pokemon collection</title>
+    </head>
+
+    <body>
+        <header class="page-header">
+            <h1>My Random Pokémon Collection</h1>
+            <p>Explore a selection of 9 randomly chosen Pokémon, showcasing their types and species!</p>
+            <button type="button" id="toggleTheme" class="theme-toggle">🌙 Toggle Dark Mode</button>
+        </header>
+
+
+        <div class="card-container">
+            <div class="card">
+                <img src="pictures/abomasnow.png" alt="Abomasnow">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Abomasnow</h3>
+                <p><strong>Type:</strong> Grass, Ice</p>
+                <p><strong>Species:</strong> Frost Tree Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/abra.png" alt="abra">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Abra</h3>
+                <p><strong>Type:</strong> Psychic</p>
+                <p><strong>Species:</strong> Psi Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/absol.png" alt="absol">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Absol</h3>
+                <p><strong>Type:</strong> Dark</p>
+                <p><strong>Species:</strong> Disaster Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/aggron.png" alt="Aggron">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Aggron</h3>
+                <p><strong>Type:</strong> Steel, Rock</p>
+                <p><strong>Species:</strong> Iron armor Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/alcremie.png" alt="Alcremie">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Alcremie</h3>
+                <p><strong>Type:</strong> Fairy</p>
+                <p><strong>Species:</strong> Cream Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/arceus-normal.png" alt="Arceus-normal">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Arceus</h3>
+                <p><strong>Type:</strong> Normal</p>
+                <p><strong>Species:</strong> Alpha Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/bisharp.png" alt="Bisharp">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Bisharp</h3>
+                <p><strong>Type:</strong> Dark, Stell</p>
+                <p><strong>Species:</strong> Sword blade Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/azelf.png" alt="Azelf">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Azelf</h3>
+                <p><strong>Type:</strong> Psychic</p>
+                <p><strong>Species:</strong> Willpower Pokémon</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="pictures/blissey.png" alt="Blissey">
+                <div class="card-content">
+                <h3><strong>Name:</strong> Blissey</h3>
+                <p><strong>Type:</strong> Normal</p>
+                <p><strong>Species:</strong> Happiness Pokémon</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <p>&copy; 2025 Le Anh Tuan | Pokémon data and images belong to © Nintendo/Game Freak</p>
+        </footer>
+        <!-- javascript button -->
+        <script>
+            const toggleButton = document.getElementById("toggleTheme");
+
+            toggleButton.addEventListener("click", () => {
+                document.body.classList.toggle("dark");
+
+                // Optional: Change button icon
+                if (document.body.classList.contains("dark")) {
+                toggleButton.textContent = "☀️ Toggle Light Mode";
+                } else {
+                toggleButton.textContent = "🌙 Toggle Dark Mode";
+                }
+            });
+        </script>
+    </body>
+</html>

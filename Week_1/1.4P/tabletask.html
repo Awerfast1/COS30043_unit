@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>WAI Table Task</title>
+	<meta charset="utf-8" >
+	<meta name="keywords" content="Accessibility,Lab,Tasks">
+	<meta name="description" content="WAI Table Task">
+</head>
+<body>
+    <h1>WAI Table Example</h1>
+    <h2 id="sales-table">Team Sales from 2013-16 (in millions of dollars)</h2>
+
+    <p id="sales-description">
+        This table displays the yearly sales performance of three teams — Alpha, Bravo, and Charlie —
+        from 2013 to 2016. Each row shows a team, and each column represents a specific year.
+        The figures are in millions of dollars.
+    </p>
+    <table aria-labelledby="sales-table" aria-describedby="sales-description">
+        <thead>
+            <tr>
+                <th scope="col">Team</th>
+                <th scope="col">2013</th>
+                <th scope="col">2014</th>
+                <th scope="col">2015</th>
+                <th scope="col">2016</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Alpha</th>
+                <td>80</td>
+                <td>90</td>
+                <td>94</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <th scope="row">Bravo</th>
+                <td>55</td>
+                <td>59</td>
+                <td>55</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <th scope="row">Charlie</th>
+                <td>25</td>
+                <td>25</td>
+                <td>28</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
